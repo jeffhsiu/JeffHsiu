@@ -19,9 +19,9 @@ class QrcodeController extends Controller
     {
         $format = $request->img_format ?: 'png';
         $size = $request->size ?: 400;
-        $margin = $request->size ?: 1;
+        $margin = $request->margin ?: 1;
         $text = $request->text ?: 'http://www.jeffhsiu.com';
-        $error = 'H';
+        $error = $request->error ?: 'M';
 
         $qrcode = QrCode::format($format)
             ->size($size)
