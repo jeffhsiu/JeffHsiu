@@ -13,6 +13,10 @@ use Illuminate\Http\Request;
 |
 */
 
+Route::get('/', function () {
+    return response()->json(['code' => 1, 'message' => 'success']);
+});
+
 Route::group(['prefix' =>'qrcode'], function() {
     Route::get('create', 'QrcodeController@createQrcode');
 });

@@ -232,4 +232,8 @@ return [
 
     ],
 
+    'domain' => [
+        'api' => env('API_DOMAIN', 'api.jeffhsiu.com'),
+    ]
+
 ];
