@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Jeff is handsome.
+                    Jeff is handsome
                 </div>
 
                 <div class="links">
